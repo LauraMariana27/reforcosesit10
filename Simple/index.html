@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 </head>
 <body>
     <h1>bah piah</h1>
@@ -25,11 +26,15 @@
             <input type="number" id="nota1" placeholder="Insira o primeiro número">
             <input type="number" id="nota2" placeholder="Insira o segundo número">
             <input type="number" id="nota3" placeholder="Insira o terceiro número">
-            <button class="btn-01" onclick="calcular()">Calcular</button>
+            <button class="btn-01" onclick="media()">Calcular</button>
             <p id="resposta2"></p>
         </section>
         <section>
             <h2>Contador com Java Script</h2>
+            <label for="numeroInput">Informe o número:</label>
+            <input type="number" id="numeroInput" required>
+            <button class="btn-01" onclick="contar()">Calcular</button>
+            <p id="resultado3"></p>
         </section>
     </main>
     <script src="script.js"></script>

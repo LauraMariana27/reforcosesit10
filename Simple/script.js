@@ -9,13 +9,10 @@ function calcular(){
         return;
     }
     res.innerHTML = n1 + n2
-    if(isNaN(res)) {
-        alert("Esse caractere não é válido. Insira somente números")
-        return;
-    }
+   
 }
 
-function calcular(){
+function media(){
     var n1 = document.getElementById("nota1").valueAsNumber;
     var n2 = document.getElementById("nota2").valueAsNumber;
     var n3 = document.getElementById("nota3").valueAsNumber;
@@ -28,5 +25,24 @@ function calcular(){
     } else{
         media.innerHTML = res.toFixed(2)
         media.style.color = "red";
+    }
+}
+
+function contar(){
+    const num = parseInt($("#numeroInput").val());
+
+    if(isNaN(num)){
+        $('#resultado3').text("Por favor, informe um número válido. Bestão.");
+        return;
+    }
+    
+    var resultStr = " "
+    if (num <= 10000){
+        for(var cont = 1; cont <= num; cont++){
+        resultStr = resultStr + cont + "<br>";
+        }
+        $("#resultado3").html(resultStr)
+    }else{
+        $('#resultado3').text("Vai travar se você colocar esse número. Seu jumento.");
     }
 }
